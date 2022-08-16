@@ -1,0 +1,21 @@
+spring:
+  datasource:
+    url: jdbc:mysql://121.140.253.36:3307/sellinone?autoReconnect=true
+    username: root
+    password: sio-root
+    driver-class-name: org.mariadb.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: create  # option type: create, create-drop, update, validate, none
+    properties:
+      hibernate:
+        diarect: org.hibernate.dialect.H2Dialect  # ??? ??? ?? ?????? ??? ?????.
+        show_sql: true  # sql ??? ?????.
+        format_sql: true  # sql query formatting
+        use_sql_comments: true  # sql ??? ????? ?????.
+
+
+logging.level.org:
+  springframework: info
+  springframework.web: info
